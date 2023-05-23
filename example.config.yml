@@ -17,6 +17,11 @@ library:
      #特殊库：
      #mix         根据参数进行多知识库融合
      #agents      提供网络资源代理，没有知识库查找功能，所以数量为0
+     #openai      为高要求客户提供OpenAIEmbeddings，并提供高度准确、灵活性的智能化方式；
+     #            目前采用最便宜的chatgpt 3.5-turbo每1000 tokens  0.002 美元 约500字；
+     #            看上去不贵，但计费比较复杂，除生成Embeddings，使用Embeddings也要收费；
+     #            目前openai可使用和其它模型相同的向量库技术如FAISS，但是因为向量库维度不一样，
+     #            故只能使用openai解析，对应llm模型了必须为openai。
      #            （目前stable-diffusion的auto脚本需要使用其中功能，同时需开启stable-diffusion的api功能）
 
      count: 5
