@@ -69,7 +69,7 @@ def find(s,step = 0,memory_name="default"):
 try:
 embeddings = OpenAIEmbeddings(openai_api_key="your keys如配置多个key使用，逗号分隔")
 except Exception  as e:
-    error_helper("embedding加载失败，请确保OpenAI访问正常，并使用与LLM配置相同的Key)
+    error_helper("embedding加载失败，请确保OpenAI访问正常，并使用与LLM配置相同的Key")
     raise e
 vectorstores={}
 def get_vectorstore(memory_name):
